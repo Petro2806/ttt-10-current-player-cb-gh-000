@@ -1,5 +1,5 @@
-def current_player(ind)
-    if(ind%2)
+def current_player(board)
+    if(turn_count(board)%2)
       return "X"
     else
         return "O"
@@ -13,5 +13,5 @@ if(board[ind]=="X" || board[ind]=="O")
   count+=1
 ind+=1
 end
-return count
+return count+1
 end
