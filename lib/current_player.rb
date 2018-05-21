@@ -9,10 +9,10 @@ end
 def turn_count(board)
   count=1
   ind=0
-  while(ind<9)
+  9.times{
     if(board[ind]=="X" || board[ind]=="O")
       count+=1
       ind+=1
-  end
+  }
 return count
 end
