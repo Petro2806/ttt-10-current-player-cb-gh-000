@@ -7,7 +7,7 @@ def current_player(board)
 end
 
 def turn_count(board)
-  count=1
+  count=0
   ind=0
   while(ind<9)
     if(board[ind]=="X" || board[ind]=="O")
